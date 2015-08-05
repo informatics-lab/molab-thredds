@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<threddsConfig>
+
+  <!-- all options are commented out in standard install - meaning use default values -->
+  <!-- see http://www.unidata.ucar.edu/projects/THREDDS/tech/reference/ThreddsConfigXMLFile.html -->
+  <serverInformation>
+    <name>Informatics Lab</name>
+    <logoUrl>http://www.informaticslab.co.uk/favicons/android-chrome-36x36.png</logoUrl>
+    <logoAltText>Initial TDS Installation</logoAltText>
+
+    <abstract>Scientific Data</abstract>
+    <keywords>meteorology, atmosphere, climate, ocean, earth science</keywords>
+
+    <contact>
+      <name>Support</name>
+      <organization>Met Office Informatics Lab</organization>
+      <email>support@informaticslab.co.uk</email>
+      <!--phone></phone-->
+    </contact>
+    <hostInstitution>
+      <name>Met Office</name>
+      <webSite>http://www.informaticslab.co.uk/</webSite>
+      <logoUrl>myGroup.gif</logoUrl>
+      <logoAltText>Met Office</logoAltText>
+    </hostInstitution>
+  </serverInformation>
+
+
+    -->
+  <htmlSetup>
+
+    <standardCssUrl>tds.css</standardCssUrl>
+    <catalogCssUrl>tdsCat.css</catalogCssUrl>
+    <openDapCssUrl>tdsDap.css</openDapCssUrl>
+
+    <googleTrackingCode></googleTrackingCode>
+
+  </htmlSetup>
+
+  <CatalogServices>
+    <allowRemote>false</allowRemote>
+  </CatalogServices>
+
+  <WCS>
+    <allow>true</allow>
+    <allowRemote>false</allowRemote>
+    <scour>15 min</scour>
+    <maxAge>30 min</maxAge>
+  </WCS>
+
+
+  <WMS>
+    <allow>true</allow>
+    <allowRemote>false</allowRemote>
+    <maxImageWidth>4096</maxImageWidth>
+    <maxImageHeight>4096</maxImageHeight>
+  </WMS>
+
+
+</threddsConfig>
